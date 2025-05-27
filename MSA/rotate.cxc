@@ -1,0 +1,4 @@
+movie record
+roll y 1 360
+movie stop
+movie encode output my_movie.mp4

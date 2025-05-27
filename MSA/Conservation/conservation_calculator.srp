@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -J Conservation_calculator
+#SBATCH -p cn_nl
+#SBATCH -N 1 
+#SBATCH -o sle105245_%j.out
+#SBATCH -e sle105245_%j.err
+#SBATCH --no-requeue
+#SBATCH -A yulongli_g1
+#SBATCH --qos=yulonglicnnl
+#SBATCH -c 28
+python3 conservation_calculator.py aligned.fasta MC4R.txt all_scores.csv query_scores.csv
